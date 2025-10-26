@@ -1,0 +1,47 @@
+@media screen and (max-width: 767px) {
+.wrap {
+    width: 300px;
+}
+
+.left {
+    width: 100px;
+}
+.center {
+    width: 125px;
+}
+.right {
+    width: 75px;
+}
+.center-3 {
+    width: 200px;
+}
+}
+
+@media screen and (max-width: 479px) {
+.wrap {
+    width: 150px;
+}
+
+.left  {
+    width: 150px;
+}
+
+.center  {
+    width: 150px;
+}
+
+.right  {
+    width: 150px;
+}
+
+.center-3  {
+    width: 150px;
+}
+
+.clearfix::after {
+content: “”;
+display: block;
+clear: both;
+}
+
+}
