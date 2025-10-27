@@ -38,10 +38,4 @@
     width: 150px;
 }
 
-.clearfix::after {
-content: “”;
-display: block;
-clear: both;
-}
-
 }
