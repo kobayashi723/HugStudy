@@ -23,23 +23,23 @@ public class Task2_18 {
         private String address;
         //問① 上記変数に従って、getterとsetterを設定して下さい。
        public String getName() {
-    	   return name;
+    	   return this.name;
        }
        public int getAge() {
-    	   return age;
+    	   return this.age;
        }
        public String getAddress() {
-    	   return address;
+    	   return this.address;
        }
        
-       public void setName(String newName) {
-           name = newName;
+       public void setName(String name) {
+           this.name = name;
        }
-       public void setAge(int newAge) {
-           age = newAge;
+       public void setAge(int age) {
+           this.age = age;
        }
-       public void setAddress(String newAddress) {
-           address = newAddress;
+       public void setAddress(String address) {
+           this.address = address;
        }
        
        
