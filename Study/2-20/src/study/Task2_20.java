@@ -13,13 +13,11 @@ public class Task2_20 {
 		child.update();
 		
 		//⑦オーバーロードされたargumentメソッドを呼び出し解答画像になるように出力して下さい。
-		Parent parent = new Parent();
+		child.argument();        // 引数0つの argument() を呼び出す
+		child.argument(1);       // 引数1つの argument(int) を呼び出す
+		child.argument(1, 1);
 		
-		parent.argument();
-		parent.argument(1);
-		parent.argument(1,1);
-		
-		
+
 		
 		
 	}
