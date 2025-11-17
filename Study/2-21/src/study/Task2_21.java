@@ -31,18 +31,18 @@ public class Task2_21 {
         // 値にはオレンジは150円、ぶどうは120円、りんごは180円、梨は140円を格納して下さい。
         // 値は数値のみで単位の円は入れないでください。
     	HashMap<String, Integer> fruitsHashMap = new HashMap<String, Integer>();
-    	fruitsHashMap.put(orange,150);
-    	fruitsHashMap.put(grape,120);
-    	fruitsHashMap.put(apple,180);
-    	fruitsHashMap.put(pear,140);
+    	fruitsHashMap.put(fruitsArrayList.get(0),150);
+    	fruitsHashMap.put(fruitsArrayList.get(1),120);
+    	fruitsHashMap.put(fruitsArrayList.get(2),180);
+    	fruitsHashMap.put(fruitsArrayList.get(3),140);
    
         // ③ オレンジの値段を200円に上書きしてください。
-    	fruitsHashMap.replace(orange,200);
+    	fruitsHashMap.replace(fruitsArrayList.get(0),200);
         
         // ④ レッスン内容を参考に拡張for文を使い、
         // 実行結果がターミナルと同じように表示されるよう出力して下さい。
     	for(String key: fruitsHashMap.keySet()) {
-            System.out.println(key + "の値は" + fruitsHashMap.get(key) + "です。");
+            System.out.println(key + "の値段は" + fruitsHashMap.get(key) + "です。");
         }
 
 
