@@ -18,13 +18,13 @@ public class Task2_23 {
 
         //ここに解答
         Person yamada = new Person("山田太郎",Constants.LANGUAGE_JAVA);
-       
+        persons.add(yamada);
        
 
         //②作成した変数「yamada」を利用し名前を表示して下さい。
  
         //ここに解答
-        System.out.println(yamada.getName());
+        System.out.println(persons.get(0).getName());
 
         
         //③Personクラスの変数名「ishitani」というインスタンスを作成して下さい。
@@ -33,19 +33,20 @@ public class Task2_23 {
         
         //ここに解答
         Person ishitani = new Person("石谷花子",Constants.LANGUAGE_HTML);
+        persons.add(ishitani);
         
         //④作成した変数「ishitani」を利用し学んでいる言語を表示して下さい。
 
         //ここに解答
-        System.out.println(ishitani.getLanguage());
+        System.out.println(persons.get(1).getLanguage());
         
         //⑤「〇〇が△△を学んでいます」という表示で山田さん、石谷さんが何を学んでいるか出力して下さい。
         
         
         //ここに解答
                      
-        System.out.println(yamada.getName() + "は、" + yamada.getLanguage() + "を学んでいます");
-        System.out.println(ishitani.getName() + "は、" + ishitani.getLanguage() + "を学んでいます");
+        System.out.println(persons.get(0).getName() + "は、" + persons.get(0).getLanguage() + "を学んでいます");
+        System.out.println(persons.get(1).getName() + "は、" + persons.get(1).getLanguage() + "を学んでいます");
 
     }
 
