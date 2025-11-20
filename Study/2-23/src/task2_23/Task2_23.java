@@ -24,7 +24,7 @@ public class Task2_23 {
         //②作成した変数「yamada」を利用し名前を表示して下さい。
  
         //ここに解答
-        System.out.println(persons.get(0).getName());
+        System.out.println(yamada.getName());
 
         
         //③Personクラスの変数名「ishitani」というインスタンスを作成して下さい。
@@ -38,15 +38,16 @@ public class Task2_23 {
         //④作成した変数「ishitani」を利用し学んでいる言語を表示して下さい。
 
         //ここに解答
-        System.out.println(persons.get(1).getLanguage());
+        System.out.println(ishitani.getLanguage());
         
         //⑤「〇〇が△△を学んでいます」という表示で山田さん、石谷さんが何を学んでいるか出力して下さい。
         
         
         //ここに解答
                      
-        System.out.println(persons.get(0).getName() + "は、" + persons.get(0).getLanguage() + "を学んでいます");
-        System.out.println(persons.get(1).getName() + "は、" + persons.get(1).getLanguage() + "を学んでいます");
+        for(int i=0; i<persons.size(); i++) {
+            System.out.println(persons.get(i).getName() + "は、" + persons.get(i).getLanguage() + "を学んでいます");
+        }
 
     }
 
