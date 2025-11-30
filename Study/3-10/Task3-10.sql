@@ -16,7 +16,7 @@ SELECT * FROM Order_Header B WHERE B.Total < 10000;
 
 
 -- 4. 「関東」エリアの全店舗情報を抽出して下さい。
-SELECT * FROM shop JOIN area ON shop.areacode = area.areacode
+SELECT shopcode, shopname, shopnameabc FROM shop JOIN area ON shop.areacode = area.areacode
 where areaname='関東';
 
 
@@ -26,7 +26,7 @@ GROUP BY goodscode;
 
 
 -- 6. 商品（Gods）テーブルから単価（UnitPrice)が5000円より高い商品の情報を全て抽出して下さい。
-SELECT * from goods where 5000 < UnitPrice ;
+SELECT * from goods where  UnitPrice >  5000 ;
 
 
 -- 7. Shopテーブルの全ての店舗コード（Shopcode）、店舗名（Shopname）を、所在地（areaname）とあわせて抽出してください。
