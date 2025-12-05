@@ -39,17 +39,9 @@ VALUES
 INSERT INTO store_table
 (store_code, store_name, store_nameAbc, update_day)
 VALUES
-('EA09','新宿店','SHINJUKUTEN','2012-08-01');
-
-INSERT INTO store_table
-(store_code, store_name, store_nameAbc, update_day)
-VALUES
-('WE03','梅田店','UMEDETEN','2013-02-01');
-
-INSERT INTO store_table
-(store_code, store_name, store_nameAbc, update_day)
-VALUES
-('WE04','福岡店','FUKUOKATEN','2014-05-01');
+('EA09', '新宿店', 'SHINJUKUTEN', '2012-08-01'), 
+('WE03', '梅田店', 'UMEDETEN',    '2013-02-01'), 
+('WE04', '福岡店', 'FUKUOKATEN',  '2014-05-01'); 
 
 
 -- 8. 在庫テーブルの在庫数が20以上の商品の在庫数を50に更新して下さい。※実行後の「データ出力」画面も貼付すること。
